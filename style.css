@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 .nav{
     background:rgb(195, 139, 139);
     text-decoration: none;
