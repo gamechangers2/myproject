@@ -1,0 +1,22 @@
+name: Greet New Contributors
+
+on:
+  pull_request:
+    types: [opened]
+  issues:
+    types: [opened]
+
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Greet New Contributors
+        uses: actions/checkout@v2
+        with:
+          ref: ${{ github.head_ref }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "Hello, welcome to our project! 🌟"
+          echo "Thank you for your contribution!"
+
