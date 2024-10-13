@@ -4,10 +4,12 @@
 }
 
 .nav{
-    background:rgb(195, 139, 139);
+    background-color:rgb(195, 139, 139);
     text-decoration: none;
     text-align: center;
+
      padding:10px;
+
     display:flex;
     justify-content: center;
     
